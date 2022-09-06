@@ -1,3 +1,12 @@
+#' Dijkstra Algorithm
+#'
+#' @param graph A dataset representing the graph in which the algorithm should search for the shortest paths
+#' @param init_node The starting node from which the shortest paths are calculated
+#' @description The algorithm finds the distance  of the shortest path between a given node to every other node in the graph
+#' @return Distances of the shortest paths between the given starting node to each other node
+#' @references https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+#' @export
+
 dijkstra<-function(graph,init_node){
 
   if (length(colnames(graph))!=3 || !is.numeric(init_node) || !all(colnames(graph)==c("v1","v2","w")) || !is.data.frame(graph) || !any(unique(graph[['v1']]==init_node))) stop("Wrong input")

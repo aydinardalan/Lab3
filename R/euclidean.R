@@ -1,3 +1,12 @@
+#' Euclidean Algorithm
+#'
+#' @param a The first number
+#' @param b The second number
+#' @description The algorithm finds the greatest common divisor of two given numbers
+#' @return Greatest common divisor of the two input numbers
+#' @references https://en.wikipedia.org/wiki/Euclidean_algorithm
+#' @export
+
 euclidean <- function(a,b){
   temp<- abs(c(a,b))
   a <- min(temp)
