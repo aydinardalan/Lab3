@@ -1,0 +1,14 @@
+Package: Lab3
+Title: Functions for Dijkstra algorithm and Euclidean algorithm
+Version: 1.0
+Authors@R: 
+    person("Aydin", "Ardalan", , "aydin.ardalan@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This package includes Euclidean algorithm for finding the greatest common divisor of two real numbers, as well as Dijkstra algorithm for finding the distances of the shortest paths between a starting node and every other node in a given graph.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
